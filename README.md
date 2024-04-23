@@ -55,6 +55,8 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     consumerStreetNumber: "client address (house number)",
     consumerCountry: "client address (Country)",
     consumerZipcode: "client address (zip code)",
+    consumerPhone: "client phone number",
+    consumerYearOfBirth: "client year of birth",
   };
   // Append Sovendus script to the body
   var script = document.createElement("script");
