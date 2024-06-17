@@ -44,7 +44,7 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericScript-1.3.0",
+    integrationType: "genericScript-1.3.1",
   });
   window.sovConsumer = {
     consumerSalutation: "Salutation ('Mr.' or 'Mrs.')",
@@ -58,14 +58,14 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     consumerPhone: "client phone number",
     consumerYearOfBirth: "client year of birth",
   };
-  // Append Sovendus script to the body
+  // Append Sovendus script to the head
   var script = document.createElement("script");
   script.type = "text/javascript";
   script.async = true;
   script.src =
     window.location.protocol +
     "//api.sovendus.com/sovabo/common/js/flexibleIframe.js";
-  document.body.appendChild(script);
+  document.head.appendChild(script);
 </script>
 <!--sovendus code end -->
 ```
@@ -100,4 +100,124 @@ Just add the following to the HTML of the home / landing page:
 
 ```html
 <script async="true" src="https://api.sovendus.com/js/landing.js"></script>
+```
+
+## User consent based integration
+
+While Sovendus works without cookies and processes data only to improve the user experience, some might want to only pass on personal data when the user explicitly gives consent.
+
+The following examples illustrate how you can integrate Sovendus without customer data if no consent is given and only pass on customer data if the user has given consent.
+
+Depending on your user consent solution you can use one of the following two variants:
+
+### Variant 1 - Split up the integration
+
+With most consent solutions you can add an attribute to script tags that lets you define the consent level in your consent tool. Make sure the first script block gets executed only when Marketing consent is given and the second script block should always be executed.
+
+```html
+<!--sovendus code begin -->
+<div id="sovendus-container-1">
+  <!-- the integration loads the content into this div element -->
+</div>
+
+<script
+  type="text/javascript"
+  my-consent-solution-attribute="Sovendus-personalized"
+>
+  // Make sure this script block gets only executed when consent is given
+
+  window.sovConsumer = {
+    consumerSalutation: "Salutation ('Mr.' or 'Mrs.')",
+    consumerFirstName: "First name",
+    consumerLastName: "Last Name",
+    consumerEmail: "client address (e-mail address)",
+    consumerStreet: "client address (street)",
+    consumerStreetNumber: "client address (house number)",
+    consumerCountry: "client address (Country)",
+    consumerZipcode: "client address (zip code)",
+    consumerPhone: "client phone number",
+    consumerYearOfBirth: "client year of birth",
+  };
+</script>
+
+<script type="text/javascript" my-consent-solution-attribute="Sovendus">
+  // Make sure this script block gets always executed
+
+  window.sovIframes = window.sovIframes || [];
+  window.sovIframes.push({
+    trafficSourceNumber: "{$TRAFFIC_SOURCE_NUMBER}",
+    trafficMediumNumber: "{$TRAFFIC_MEDIUM_NUMBER}",
+    sessionId: "Session-ID",
+    timestamp: "Timestamp",
+    orderId: "Order-ID",
+    orderValue: "Order value",
+    orderCurrency: "Order currency",
+    usedCouponCode: "Used coupon code",
+    iframeContainerId: "sovendus-container-1",
+    integrationType: "genericConsentScript-1.3.1",
+  });
+
+  // Append Sovendus script to the head
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.async = true;
+  script.src =
+    window.location.protocol +
+    "//api.sovendus.com/sovabo/common/js/flexibleIframe.js";
+  document.head.appendChild(script);
+</script>
+<!--sovendus code end -->
+```
+
+### Variant 2 - Based on consent variable
+
+With many consent solutions you can get the consent state with a function or variable. In the following example we use such a function to pass on customer data only when consent was given.
+
+```html
+<!--sovendus code begin -->
+<div id="sovendus-container-1">
+  <!-- the integration loads the content into this div element -->
+</div>
+
+<script type="text/javascript" my-consent-solution-attribute="Sovendus">
+  if (isConsentAccepted("Sovendus-personalized")) {
+    // Make sure this part gets only executed if consent is given.
+    window.sovConsumer = {
+      consumerSalutation: "Salutation ('Mr.' or 'Mrs.')",
+      consumerFirstName: "First name",
+      consumerLastName: "Last Name",
+      consumerEmail: "client address (e-mail address)",
+      consumerStreet: "client address (street)",
+      consumerStreetNumber: "client address (house number)",
+      consumerCountry: "client address (Country)",
+      consumerZipcode: "client address (zip code)",
+      consumerPhone: "client phone number",
+      consumerYearOfBirth: "client year of birth",
+    };
+  }
+  // The rest should be executed always
+  window.sovIframes = window.sovIframes || [];
+  window.sovIframes.push({
+    trafficSourceNumber: "{$TRAFFIC_SOURCE_NUMBER}",
+    trafficMediumNumber: "{$TRAFFIC_MEDIUM_NUMBER}",
+    sessionId: "Session-ID",
+    timestamp: "Timestamp",
+    orderId: "Order-ID",
+    orderValue: "Order value",
+    orderCurrency: "Order currency",
+    usedCouponCode: "Used coupon code",
+    iframeContainerId: "sovendus-container-1",
+    integrationType: "genericConsentScript-1.3.1",
+  });
+
+  // Append Sovendus script to the head
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.async = true;
+  script.src =
+    window.location.protocol +
+    "//api.sovendus.com/sovabo/common/js/flexibleIframe.js";
+  document.head.appendChild(script);
+</script>
+<!--sovendus code end -->
 ```
