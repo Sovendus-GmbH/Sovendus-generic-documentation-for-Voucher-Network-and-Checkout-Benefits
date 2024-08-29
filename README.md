@@ -53,8 +53,9 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     consumerEmail: "client address (e-mail address)",
     consumerStreet: "client address (street)",
     consumerStreetNumber: "client address (house number)",
-    consumerCountry: "client address (Country)",
     consumerZipcode: "client address (zip code)",
+    consumerCity: "client address (zip code)",
+    consumerCountry: "client address (Country)",
     consumerPhone: "client phone number",
     consumerYearOfBirth: "client year of birth",
   };
@@ -133,8 +134,9 @@ With most consent solutions you can add an attribute to script tags that lets yo
     consumerEmail: "client address (e-mail address)",
     consumerStreet: "client address (street)",
     consumerStreetNumber: "client address (house number)",
-    consumerCountry: "client address (Country)",
     consumerZipcode: "client address (zip code)",
+    consumerCity: "client address (zip code)",
+    consumerCountry: "client address (Country)",
     consumerPhone: "client phone number",
     consumerYearOfBirth: "client year of birth",
   };
@@ -189,8 +191,9 @@ With many consent solutions you can get the consent state with a function or var
       consumerEmail: "client address (e-mail address)",
       consumerStreet: "client address (street)",
       consumerStreetNumber: "client address (house number)",
-      consumerCountry: "client address (Country)",
       consumerZipcode: "client address (zip code)",
+      consumerCity: "client address (zip code)",
+      consumerCountry: "client address (Country)",
       consumerPhone: "client phone number",
       consumerYearOfBirth: "client year of birth",
     };
