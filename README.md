@@ -30,8 +30,6 @@ Replace the placeholder variables ({$TRAFFIC_SOURCE_NUMBER} and {$TRAFFIC_MEDIUM
 
 Copy the HTML code below and paste it into the end of the <body> section of your order success/thank you page. This code initializes the Sovendus integration and provides necessary data about the order and the consumer.
 
-[Information about the mandatory Parameters / Data](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
-
 ```html
 <!--sovendus code begin -->
 <script type="text/javascript">
@@ -75,7 +73,9 @@ Copy the HTML code below and paste it into the end of the <body> section of your
 
 ### 4. Customize Consumer Data
 
-Ensure that the sovConsumer and sovIframes objects contains actual data about the consumer / order. Replace the placeholder values ("Salutation", "First name", etc.) with the corresponding data retrieved from your order form or user database. You can find [more information about the parameters here](https://github.com/Sovendus-GmbH/Sovendus-Voucher-Network-and-Checkout-Benefits-Parameter)
+Ensure that the sovConsumer and sovIframes objects contains actual data about the consumer / order. Replace the placeholder values ("Salutation", "First name", etc.) with the corresponding data retrieved from your order form or user database.
+
+[Information about the mandatory Parameters / Data](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
 
 ### 5: Test the Integration
 
