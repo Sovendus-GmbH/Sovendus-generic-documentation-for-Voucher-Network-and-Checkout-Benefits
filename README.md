@@ -30,6 +30,8 @@ Replace the placeholder variables ({$TRAFFIC_SOURCE_NUMBER} and {$TRAFFIC_MEDIUM
 
 Copy the HTML code below and paste it into the end of the <body> section of your order success/thank you page. This code initializes the Sovendus integration and provides necessary data about the order and the consumer.
 
+[Information about the mandatory Parameters / Data](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
+
 ```html
 <!--sovendus code begin -->
 <script type="text/javascript">
