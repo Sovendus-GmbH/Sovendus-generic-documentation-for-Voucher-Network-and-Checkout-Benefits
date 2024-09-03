@@ -75,7 +75,7 @@ Copy the HTML code below and paste it into the end of the <body> section of your
 
 Ensure that the sovConsumer and sovIframes objects contains actual data about the consumer / order. Replace the placeholder values ("Salutation", "First name", etc.) with the corresponding data retrieved from your order form or user database.
 
-[Information about the mandatory Parameters / Data](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
+[Click here for detailed information on the parameters and which ones are required.](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
 
 ### 5: Test the Integration
 
