@@ -58,7 +58,7 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     consumerCountry: "client address (Country)",
     consumerPhone: "client phone number",
     consumerYearOfBirth: "client year of birth",
-    consumerDateOfBirth: "01.12.2020",
+    consumerDateOfBirth: "client date of birth",
   };
   // Append Sovendus script to the head
   var script = document.createElement("script");
