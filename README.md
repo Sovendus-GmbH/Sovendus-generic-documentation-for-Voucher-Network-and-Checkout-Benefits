@@ -44,7 +44,7 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericScript-1.3.1",
+    integrationType: "genericScript-1.3.2",
   });
   window.sovConsumer = {
     consumerSalutation: "Salutation ('Mr.' or 'Mrs.')",
@@ -142,7 +142,7 @@ With most consent solutions you can add an attribute to script tags that lets yo
     consumerCountry: "client address (Country)",
     consumerPhone: "client phone number",
     consumerYearOfBirth: "client year of birth",
-    consumerDateOfBirth: "01.12.2020",
+    consumerDateOfBirth: "client date of birth",
   };
 </script>
 
@@ -160,7 +160,7 @@ With most consent solutions you can add an attribute to script tags that lets yo
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericConsentScript-1.3.1",
+    integrationType: "genericConsentScript-1.3.2",
   });
 
   // Append Sovendus script to the head
@@ -200,7 +200,7 @@ With many consent solutions you can get the consent state with a function or var
       consumerCountry: "client address (Country)",
       consumerPhone: "client phone number",
       consumerYearOfBirth: "client year of birth",
-      consumerDateOfBirth: "01.12.2020",
+      consumerDateOfBirth: "client date of birth",
     };
   }
   // The rest should be executed always
@@ -215,7 +215,7 @@ With many consent solutions you can get the consent state with a function or var
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericConsentScript-1.3.1",
+    integrationType: "genericConsentScript-1.3.2",
   });
 
   // Append Sovendus script to the head
