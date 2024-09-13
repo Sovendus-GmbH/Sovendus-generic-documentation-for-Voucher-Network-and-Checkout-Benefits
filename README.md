@@ -58,6 +58,7 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     consumerCountry: "client address (Country)",
     consumerPhone: "client phone number",
     consumerYearOfBirth: "client year of birth",
+    consumerDateOfBirth: "01.12.2020",
   };
   // Append Sovendus script to the head
   var script = document.createElement("script");
@@ -141,6 +142,7 @@ With most consent solutions you can add an attribute to script tags that lets yo
     consumerCountry: "client address (Country)",
     consumerPhone: "client phone number",
     consumerYearOfBirth: "client year of birth",
+    consumerDateOfBirth: "01.12.2020",
   };
 </script>
 
@@ -198,6 +200,7 @@ With many consent solutions you can get the consent state with a function or var
       consumerCountry: "client address (Country)",
       consumerPhone: "client phone number",
       consumerYearOfBirth: "client year of birth",
+      consumerDateOfBirth: "01.12.2020",
     };
   }
   // The rest should be executed always
