@@ -44,7 +44,7 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericScript-1.3.2",
+    integrationType: "genericScript-1.3.3",
   });
   window.sovConsumer = {
     consumerSalutation: "Salutation ('Mr.' or 'Mrs.')",
@@ -160,7 +160,7 @@ With most consent solutions you can add an attribute to script tags that lets yo
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericConsentScript-1.3.2",
+    integrationType: "genericConsentScript-1.3.3",
   });
 
   // Append Sovendus script to the head
@@ -215,7 +215,7 @@ With many consent solutions you can get the consent state with a function or var
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericConsentScript-1.3.2",
+    integrationType: "genericConsentScript-1.3.3",
   });
 
   // Append Sovendus script to the head
