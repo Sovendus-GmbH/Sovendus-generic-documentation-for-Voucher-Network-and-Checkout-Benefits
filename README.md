@@ -24,7 +24,7 @@ Copy the HTML markup provided into the appropriate location in your order succes
 
 ### 2. Replace Placeholder Variables
 
-Replace the placeholder variables ({$TRAFFIC_SOURCE_NUMBER} and {$TRAFFIC_MEDIUM_NUMBER}) with the actual traffic source number and traffic medium number you have received from Sovendus.
+Replace the placeholder variables TRAFFIC_SOURCE_NUMBER and TRAFFIC_MEDIUM_NUMBER with the actual traffic source number and traffic medium number you have received from Sovendus.
 
 ### 3. Insert JavaScript Code
 
