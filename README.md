@@ -35,8 +35,8 @@ Copy the HTML code below and paste it into the end of the <body> section of your
 <script type="text/javascript">
   window.sovIframes = window.sovIframes || [];
   window.sovIframes.push({
-    trafficSourceNumber: "{$TRAFFIC_SOURCE_NUMBER}",
-    trafficMediumNumber: "{$TRAFFIC_MEDIUM_NUMBER}",
+    trafficSourceNumber: YOUR_TRAFFIC_SOURCE_NUMBER,
+    trafficMediumNumber: YOUR_TRAFFIC_MEDIUM_NUMBER,
     sessionId: "Session-ID",
     timestamp: "Timestamp",
     orderId: "Order-ID",
@@ -151,8 +151,8 @@ With most consent solutions you can add an attribute to script tags that lets yo
 
   window.sovIframes = window.sovIframes || [];
   window.sovIframes.push({
-    trafficSourceNumber: "{$TRAFFIC_SOURCE_NUMBER}",
-    trafficMediumNumber: "{$TRAFFIC_MEDIUM_NUMBER}",
+    trafficSourceNumber: YOUR_TRAFFIC_SOURCE_NUMBER,
+    trafficMediumNumber: YOUR_TRAFFIC_MEDIUM_NUMBER,
     sessionId: "Session-ID",
     timestamp: "Timestamp",
     orderId: "Order-ID",
@@ -206,8 +206,8 @@ With many consent solutions you can get the consent state with a function or var
   // The rest should be executed always
   window.sovIframes = window.sovIframes || [];
   window.sovIframes.push({
-    trafficSourceNumber: "{$TRAFFIC_SOURCE_NUMBER}",
-    trafficMediumNumber: "{$TRAFFIC_MEDIUM_NUMBER}",
+    trafficSourceNumber: YOUR_TRAFFIC_SOURCE_NUMBER,
+    trafficMediumNumber: YOUR_TRAFFIC_MEDIUM_NUMBER,
     sessionId: "Session-ID",
     timestamp: "Timestamp",
     orderId: "Order-ID",
