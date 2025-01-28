@@ -44,7 +44,7 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericScript-1.3.3",
+    integrationType: "genericScript-1.3.4",
   });
   window.sovConsumer = {
     consumerSalutation: "Salutation ('Mr.' or 'Mrs.')",
@@ -64,9 +64,7 @@ Copy the HTML code below and paste it into the end of the <body> section of your
   var script = document.createElement("script");
   script.type = "text/javascript";
   script.async = true;
-  script.src =
-    window.location.protocol +
-    "//api.sovendus.com/sovabo/common/js/flexibleIframe.js";
+  script.src = "https://api.sovendus.com/sovabo/common/js/flexibleIframe.js";
   document.head.appendChild(script);
 </script>
 <!--sovendus code end -->
