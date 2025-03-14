@@ -38,7 +38,6 @@ Copy the HTML code below and paste it into the end of the <body> section of your
     trafficSourceNumber: YOUR_TRAFFIC_SOURCE_NUMBER,
     trafficMediumNumber: YOUR_TRAFFIC_MEDIUM_NUMBER,
     sessionId: "Session-ID",
-    timestamp: "Timestamp",
     orderId: "Order-ID",
     orderValue: "Order value",
     orderCurrency: "Order currency",
@@ -152,13 +151,12 @@ With most consent solutions you can add an attribute to script tags that lets yo
     trafficSourceNumber: YOUR_TRAFFIC_SOURCE_NUMBER,
     trafficMediumNumber: YOUR_TRAFFIC_MEDIUM_NUMBER,
     sessionId: "Session-ID",
-    timestamp: "Timestamp",
     orderId: "Order-ID",
     orderValue: "Order value",
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericConsentScript-1.3.3",
+    integrationType: "genericConsentScript-1.3.4",
   });
 
   // Append Sovendus script to the head
@@ -207,13 +205,12 @@ With many consent solutions you can get the consent state with a function or var
     trafficSourceNumber: YOUR_TRAFFIC_SOURCE_NUMBER,
     trafficMediumNumber: YOUR_TRAFFIC_MEDIUM_NUMBER,
     sessionId: "Session-ID",
-    timestamp: "Timestamp",
     orderId: "Order-ID",
     orderValue: "Order value",
     orderCurrency: "Order currency",
     usedCouponCode: "Used coupon code",
     iframeContainerId: "sovendus-container-1",
-    integrationType: "genericConsentScript-1.3.3",
+    integrationType: "genericConsentScript-1.3.4",
   });
 
   // Append Sovendus script to the head
