@@ -11,12 +11,12 @@ This guide provides a clear, step-by-step process to upgrade your integration fr
 ## TL;DR Checklist
 
 - [ ] **Obtain Sovendus Identifiers:**  
-  If you haven't already contact your account manager to receive your unique Sovendus traffic source and medium numbers.
+  If you haven't already, contact your account manager to receive your unique Sovendus traffic source and medium numbers.
 
 - [ ] **Choose Your Integration Method:**  
   - **Platform-Specific Plugins/Components:** Ideal for a quick, streamlined setup.
   - **Manual Integration:** Follow the detailed code examples provided below.  
-  - *(Full instructions are available [here](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Web-Integration).)*
+  - *([Full instructions are available here](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Web-Integration).)*
 
 - [ ] **Remove Old Profity Code:**  
   Delete all existing Profity conversion and landing scripts from your pages.
