@@ -1,34 +1,41 @@
-# Sovendus generic documentation for Rewards
+# Sovendus Rewards Integration Guide
 
-## Introduction Rewards
+## Overview
 
-This documentation is intended to help you successfully integrate Sovendus Rewards into your shop.
+Sovendus Rewards allows you to reward your customers with exclusive discounts and vouchers, enhancing customer loyalty and engagement.
 
-The implementation is done via JavaScript on the shop’s order success page. An iFrame is used to connect to the Sovendus servers to retrieve the individual reward banner and embed it on the page.
+### Benefits of Sovendus Rewards:
 
-Your personal banner and/or list with special offers will be created by Sovendus and made available on our servers.
+- Strengthen brand loyalty
+- Enhance customer satisfaction
+- Increase recommendation rates and customer activation
 
-If you have any questions or encounter any issues during the process, please do not hesitate to reach out to us for assistance.
+## Integration Steps
 
-## Integrating Sovendus on your user profile page
+Follow these steps to integrate Sovendus Rewards into your shop:
 
-### 1. Place the HTML Markup
+### 1. Choose an Entry Point and Add HTML Markup
 
-Copy the HTML markup provided into the appropriate location in your user profile page's HTML code. This code creates a container where the Sovendus content will be loaded. The position of this container doesn't affect the placement of the Sovendus sticky banner and overlay if you're using one.
+Decide where the rewards portal will be accessible, such as:
+
+- "My Account" submenu
+- Customer login area
+
+Once you've chosen the location, insert the following HTML code into that section of your page:
 
 ```html
 <div id="sovendus-container-1">
-  <!-- the integration loads the content into this div element -->
+  <!-- The integration will load the content into this <div> element. -->
 </div>
 ```
 
-### 2. Replace Placeholder Variables
+### 2. Configure Traffic Variables
 
-Replace the placeholder variables TRAFFIC_SOURCE_NUMBER and TRAFFIC_MEDIUM_NUMBER with the actual traffic source number and traffic medium number you have received from Sovendus.
+Replace `YOUR_TRAFFIC_SOURCE_NUMBER` and `YOUR_TRAFFIC_MEDIUM_NUMBER` with the actual values provided by Sovendus.
 
 ### 3. Insert JavaScript Code
 
-Copy the HTML code below and paste it into the end of the <body> section of your user profile page. This code initializes the Sovendus integration and provides necessary data about the consumer.
+Add the following JavaScript code at the end of the `<body>` section:
 
 ```html
 <!--sovendus code begin -->
@@ -64,10 +71,15 @@ Copy the HTML code below and paste it into the end of the <body> section of your
 <!--sovendus code end -->
 ```
 
-### 4. Customize Consumer Data
+### 4. Provide Consumer Data
 
-Ensure that the sovConsumer objects contains actual data about the consumer. Replace the placeholder values ("Salutation", "First name", etc.) with the corresponding data retrieved from your user profile or user database.
+Ensure that the `sovConsumer` object contains real customer data by dynamically replacing the placeholders with actual values from your user database.
 
-### 5: Test the Integration
+### 5. Test the Integration
 
-After implementing the code, test your user profile page to ensure that the Sovendus integration works as expected and that the content is loaded.
+- Verify that the Sovendus banner loads correctly on the chosen page.
+- Ensure customer data is passed accurately.
+- Check for any errors in the browser console and resolve them if necessary.
+
+For any issues, contact Sovendus support for assistance.
+
