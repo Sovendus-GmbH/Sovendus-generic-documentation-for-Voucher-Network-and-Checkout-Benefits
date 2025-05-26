@@ -2,6 +2,8 @@
 
 This guide provides a clear, step-by-step process to upgrade your integration from Profity to the Sovendus Voucher Network. Follow the instructions below to ensure a smooth transition.
 
+
+
 ---
 
 > **Note:** If you’re using **GetBack** (now called **Sovendus Optimize**) alongside Profity, there is no need to modify your GetBack integration. Only replace your Profity integration with the new Sovendus Voucher Network code.
@@ -16,7 +18,7 @@ This guide provides a clear, step-by-step process to upgrade your integration fr
 - [ ] **Choose Your Integration Method:**  
   - **Platform-Specific Plugins/Components:** Ideal for a quick, streamlined setup.
   - **Manual Integration:** Follow the detailed code examples provided below.  
-  - *([Full instructions are available here](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Web-Integration).)*
+  - [Full instructions are available here](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Web-Integration)
 
 - [ ] **Remove Old Profity Code:**  
   Delete all existing Profity conversion and landing scripts from your pages.
